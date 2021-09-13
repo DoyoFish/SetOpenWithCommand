@@ -1,0 +1,11 @@
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\bin\Release\SetOpenWithCommand.exe.config
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\bin\Release\SetOpenWithCommand.exe
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\bin\Release\SetOpenWithCommand.pdb
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Properties.Resources.resources
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.csproj.GenerateResource.cache
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.csproj.CoreCompileInputs.cache
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.exe
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.pdb
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.csprojAssemblyReference.cache
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Forms.Main.resources
+D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Forms.Settings.resources
