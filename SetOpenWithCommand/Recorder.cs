@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SetOpenWithCommand
 {
@@ -103,7 +100,7 @@ namespace SetOpenWithCommand
             if (!File.Exists(RecordPath))
             {
                 _info = new RecordInfo();
-                _info.AddRangeFileExtension(new string[] { ".json", ".txt", ".mp4", ".exe", ".dll" });
+                _info.AddRangeFileExtension(new string[] { ".json", ".txt", ".mp4", ".exe", ".dll", "*", "Folder" });
             }
             else
             {

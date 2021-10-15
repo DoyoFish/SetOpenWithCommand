@@ -45,12 +45,15 @@ namespace SetOpenWithCommand.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this._fileTypeList = new System.Windows.Forms.ComboBox();
-            this._extraParams = new System.Windows.Forms.TextBox();
+            this._rightExtraParams = new System.Windows.Forms.TextBox();
             this._extraParamTog = new System.Windows.Forms.CheckBox();
             this._browserBtn = new System.Windows.Forms.Button();
             this._settings = new System.Windows.Forms.Button();
             this._commandNameText = new System.Windows.Forms.ComboBox();
             this._pathText = new System.Windows.Forms.ComboBox();
+            this._leftExtraParams = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +68,7 @@ namespace SetOpenWithCommand.Forms
             // _registerBtn
             // 
             this._registerBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this._registerBtn.Location = new System.Drawing.Point(36, 240);
+            this._registerBtn.Location = new System.Drawing.Point(36, 299);
             this._registerBtn.Name = "_registerBtn";
             this._registerBtn.Size = new System.Drawing.Size(75, 23);
             this._registerBtn.TabIndex = 6;
@@ -76,7 +79,7 @@ namespace SetOpenWithCommand.Forms
             // _unregisterBtn
             // 
             this._unregisterBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this._unregisterBtn.Location = new System.Drawing.Point(230, 240);
+            this._unregisterBtn.Location = new System.Drawing.Point(230, 299);
             this._unregisterBtn.Name = "_unregisterBtn";
             this._unregisterBtn.Size = new System.Drawing.Size(75, 23);
             this._unregisterBtn.TabIndex = 7;
@@ -112,14 +115,14 @@ namespace SetOpenWithCommand.Forms
             this._fileTypeList.Size = new System.Drawing.Size(121, 20);
             this._fileTypeList.TabIndex = 1;
             // 
-            // _extraParams
+            // _rightExtraParams
             // 
-            this._extraParams.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._rightExtraParams.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._extraParams.Location = new System.Drawing.Point(34, 187);
-            this._extraParams.Name = "_extraParams";
-            this._extraParams.Size = new System.Drawing.Size(271, 21);
-            this._extraParams.TabIndex = 5;
+            this._rightExtraParams.Location = new System.Drawing.Point(34, 259);
+            this._rightExtraParams.Name = "_rightExtraParams";
+            this._rightExtraParams.Size = new System.Drawing.Size(271, 21);
+            this._rightExtraParams.TabIndex = 5;
             // 
             // _extraParamTog
             // 
@@ -174,12 +177,41 @@ namespace SetOpenWithCommand.Forms
             this._pathText.Size = new System.Drawing.Size(313, 20);
             this._pathText.TabIndex = 2;
             // 
+            // _leftExtraParams
+            // 
+            this._leftExtraParams.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._leftExtraParams.Location = new System.Drawing.Point(34, 205);
+            this._leftExtraParams.Name = "_leftExtraParams";
+            this._leftExtraParams.Size = new System.Drawing.Size(271, 21);
+            this._leftExtraParams.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(35, 188);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(155, 12);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "目标文件左侧命令, \";\"隔开";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 243);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 12);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "目标文件右侧命令, \";\"隔开";
+            // 
             // Main
             // 
             this.AcceptButton = this._registerBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 284);
+            this.ClientSize = new System.Drawing.Size(436, 343);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this._pathText);
             this.Controls.Add(this._commandNameText);
             this.Controls.Add(this._settings);
@@ -191,7 +223,8 @@ namespace SetOpenWithCommand.Forms
             this.Controls.Add(this._unregisterBtn);
             this.Controls.Add(this._registerBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this._extraParams);
+            this.Controls.Add(this._leftExtraParams);
+            this.Controls.Add(this._rightExtraParams);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(452, 323);
             this.Name = "Main";
@@ -204,12 +237,15 @@ namespace SetOpenWithCommand.Forms
 
         #endregion
 
-        private TextBox _extraParams;
+        private TextBox _rightExtraParams;
         private CheckBox _extraParamTog;
         private Button _browserBtn;
         private Button _settings;
         private ComboBox _commandNameText;
         private ComboBox _pathText;
+        private TextBox _leftExtraParams;
+        private Label label4;
+        private Label label5;
     }
 }
 

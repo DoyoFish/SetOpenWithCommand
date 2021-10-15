@@ -17,7 +17,7 @@ namespace SetOpenWithCommand.Forms
             MouseRightMenuManager.OnError += LogWriter.Instance.LogError;
             MouseRightMenuManager.OnLog += LogWriter.Instance.Log;
             LogWriter.Instance.Start();
-            _extraParams.Visible = false;
+            _rightExtraParams.Visible = false;
         }
 
         private void OnMouseRightMenuManagerError(object sender, RegisterRightMenuMsgEventArgs e)
@@ -30,7 +30,8 @@ namespace SetOpenWithCommand.Forms
             string fileType = _fileTypeList.Text;
             string commandName = _commandNameText.Text;
             string exePath = _pathText.Text;
-            string extraParam = _extraParams.Text;
+            string leftExtraParams = _leftExtraParams.Text;
+            string rightExtraParams = _rightExtraParams.Text;
             if (!File.Exists(exePath))
             {
                 MessageBox.Show("可执行程序不存在");
@@ -46,7 +47,7 @@ namespace SetOpenWithCommand.Forms
                 MessageBox.Show("文件类型为空");
                 return;
             }
-            if (!MouseRightMenuManager.RegisterRightMenu(fileType, commandName, exePath, extraParam))
+            if (!MouseRightMenuManager.RegisterRightMenuWithFullArgs(fileType, commandName, exePath, leftExtraParams.Split(';'), "%1", rightExtraParams.Split(';')))
             {
                 MessageBox.Show("注册失败");
                 return;
@@ -68,7 +69,7 @@ namespace SetOpenWithCommand.Forms
 
         private void ExtraParamTog_CheckedChanged(object sender, EventArgs e)
         {
-            _extraParams.Visible = _extraParamTog.CheckState == CheckState.Checked;
+            _rightExtraParams.Visible = _extraParamTog.CheckState == CheckState.Checked;
         }
 
         private void _browserBtn_Click(object sender, EventArgs e)
