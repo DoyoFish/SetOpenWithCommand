@@ -9,3 +9,13 @@ D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithComma
 D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.csprojAssemblyReference.cache
 D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Forms.Main.resources
 D:\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Forms.Settings.resources
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\bin\Release\SetOpenWithCommand.exe.config
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\bin\Release\SetOpenWithCommand.exe
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\bin\Release\SetOpenWithCommand.pdb
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Forms.Main.resources
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Forms.Settings.resources
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.Properties.Resources.resources
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.csproj.GenerateResource.cache
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.csproj.CoreCompileInputs.cache
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.exe
+F:\workspace\VSProjects\SetOpenWithCommand\SetOpenWithCommand\obj\Release\SetOpenWithCommand.pdb
