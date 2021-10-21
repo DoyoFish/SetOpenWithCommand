@@ -16,6 +16,7 @@ namespace SetOpenWithCommand
             private List<string> _exeHistory = new List<string>();
             private List<string> _commandHistory = new List<string>();
             private List<string> _fileExtensionHistory = new List<string>();
+            public bool ShowRegisterSelf { get; set; }
 
             public List<string> GetExeHistory()
             {

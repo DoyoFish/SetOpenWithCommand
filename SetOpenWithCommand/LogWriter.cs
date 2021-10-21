@@ -90,14 +90,14 @@ namespace SetOpenWithCommand
             }
         }
 
-        public void Log(object sender, RegisterRightMenuMsgEventArgs e)
+        public void Log(string msg)
         {
-            _logs.Enqueue(AddTag(LogType.Log, e.Msg));
+            _logs.Enqueue(AddTag(LogType.Log, msg));
         }
 
-        public void LogError(object sender, RegisterRightMenuMsgEventArgs e)
+        public void LogError(string msg)
         {
-            _logs.Enqueue(AddTag(LogType.Error, e.Msg));
+            _logs.Enqueue(AddTag(LogType.Error, msg));
         }
 
         private static string AddTag(LogType logType, string log)

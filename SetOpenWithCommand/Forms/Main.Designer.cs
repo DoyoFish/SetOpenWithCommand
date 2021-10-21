@@ -52,8 +52,8 @@ namespace SetOpenWithCommand.Forms
             this._commandNameText = new System.Windows.Forms.ComboBox();
             this._pathText = new System.Windows.Forms.ComboBox();
             this._leftExtraParams = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this._leftParamLabel = new System.Windows.Forms.Label();
+            this._rightParamLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -186,23 +186,23 @@ namespace SetOpenWithCommand.Forms
             this._leftExtraParams.Size = new System.Drawing.Size(271, 21);
             this._leftExtraParams.TabIndex = 5;
             // 
-            // label4
+            // _leftParamLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 188);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 12);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "目标文件左侧命令, \";\"隔开";
+            this._leftParamLabel.AutoSize = true;
+            this._leftParamLabel.Location = new System.Drawing.Point(35, 188);
+            this._leftParamLabel.Name = "_leftParamLabel";
+            this._leftParamLabel.Size = new System.Drawing.Size(155, 12);
+            this._leftParamLabel.TabIndex = 9;
+            this._leftParamLabel.Text = "目标文件左侧命令, \";\"隔开";
             // 
-            // label5
+            // _rightParamLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 243);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 12);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "目标文件右侧命令, \";\"隔开";
+            this._rightParamLabel.AutoSize = true;
+            this._rightParamLabel.Location = new System.Drawing.Point(35, 243);
+            this._rightParamLabel.Name = "_rightParamLabel";
+            this._rightParamLabel.Size = new System.Drawing.Size(155, 12);
+            this._rightParamLabel.TabIndex = 9;
+            this._rightParamLabel.Text = "目标文件右侧命令, \";\"隔开";
             // 
             // Main
             // 
@@ -210,8 +210,8 @@ namespace SetOpenWithCommand.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 343);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this._rightParamLabel);
+            this.Controls.Add(this._leftParamLabel);
             this.Controls.Add(this._pathText);
             this.Controls.Add(this._commandNameText);
             this.Controls.Add(this._settings);
@@ -244,8 +244,8 @@ namespace SetOpenWithCommand.Forms
         private ComboBox _commandNameText;
         private ComboBox _pathText;
         private TextBox _leftExtraParams;
-        private Label label4;
-        private Label label5;
+        private Label _leftParamLabel;
+        private Label _rightParamLabel;
     }
 }
 
